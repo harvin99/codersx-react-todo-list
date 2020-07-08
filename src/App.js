@@ -1,19 +1,13 @@
 import React from 'react';
 //import logo from './logo.svg';
 //import './App.css';
-
-const todoList = [
-  'Make coffe',
-  'Go Shopping',
-  'Wash Clothes',
-  'CLear Room'
-] 
+import Header from './components/Header'
+import LoginForm from './components/LoginForm'
 function App() {
-  const mapList = todoList.map(item => <li> {item} </li>)
   return (
-    <div> 
-      <h1> To do list </h1>
-      <ul> {mapList} </ul>
+    <div className="App"> 
+      <Header></Header>
+      <LoginForm/>
     </div>
   );
 }
